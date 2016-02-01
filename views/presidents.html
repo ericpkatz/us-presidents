@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<a href='/presidents/new'>Add a President</a>
+<ul class='data-list'>
+    {% for president in presidents %}
+    <li>{{president.name}} <span class='badge'>{{president.number}}</span></li>
+    {% endfor %}
+</ul>
+{% endblock %}
